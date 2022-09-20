@@ -1,0 +1,32 @@
+{
+    "name": "luouse",
+    "version": "0.0.0",
+    "description": "JavaScript 工具库",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "tools",
+        "javascript"
+    ],
+    "author": "luoxiaozero",
+    "license": "ISC",
+    "dependencies": {
+        "@vueuse/core": "^9.2.0",
+        "vue-demi": "^0.13.11"
+    },
+    "devDependencies": {
+        "vitest": "^0.23.4",
+        "vue": "^3.0.0"
+    },
+    "peerDependencies": {
+        "@vue/composition-api": "^1.0.0-rc.1",
+        "vue": "^2.0.0 || >=3.0.0"
+    },
+    "peerDependenciesMeta": {
+        "@vue/composition-api": {
+            "optional": true
+        }
+    }
+}

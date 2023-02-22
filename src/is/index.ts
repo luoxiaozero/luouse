@@ -21,3 +21,17 @@ export function isEamilFormat(text: string): boolean {
     }
     return false;
 }
+
+
+type Scalar = number | string | boolean | symbol
+type ScalarArray<T> =  T extends Array<infer U> ? (U extends Scalar ? T: never[]) : never[];
+
+/**两个一维数组是否相等 */
+export function isScalarArrayEquals<T extends Array<any>>(array1: ScalarArray<T>, array2: ScalarArray<T>): boolean {
+    return (
+        array1.length == array2.length &&
+        array1.every(function (v, i) {
+            return v === array2[i];
+        })
+    );
+}
